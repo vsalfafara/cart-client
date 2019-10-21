@@ -1,0 +1,56 @@
+<div class="register-status" [class.hide]="!status" [class.show]="status">
+   <button class="close" (click)="status = false">
+      <i class="far fa-times-circle"></i>
+   </button>
+   <div class="status">
+      <i class="far fa-check-circle"></i>
+      <h1>Awesome</h1>
+      <svg xmlns="http://www.w3.org/2000/svg" width="91" height="27" viewBox="0 0 91 27">
+         <path id="Polygon_1" data-name="Polygon 1" d="M45.5,0,91,27H0Z" transform="translate(91 27) rotate(180)"
+            fill="#023044" />
+      </svg>
+   </div>
+   <div class="status-message">
+      <p>Successfully registered!</p>
+      <p>A verification was sent to your email.</p>
+      <button>Resend Email</button>
+   </div>
+</div>
+<div class="row">
+   <div class="auth-hero">
+      <div class="logo">Qompass</div>
+      <div class="content">
+         <h1>Nice to meet you</h1>
+         <p>Enter the details needed to power your online business with a flexible system</p>
+      </div>
+      <i class="material-icons">chevron_right</i>
+   </div>
+   <div class="call-to-action">
+      <h1>Create Account</h1>
+      <p>Already have an account? <a routerLink="/login">Login with us</a></p>
+      <form>
+         <div class="form-control">
+            <i class="material-icons">perm_identity</i>
+            <input type="text" placeholder="Name">
+         </div>
+         <div class="form-control">
+            <i class="material-icons">mail_outline</i>
+            <input type="text" placeholder="Email">
+         </div>
+         <div class="form-control">
+            <i class="material-icons">lock_outline</i>
+            <input type="text" placeholder="Password">
+         </div>
+         <div class="form-control">
+            <i class="material-icons">lock_outline</i>
+            <input type="text" placeholder="Confirm Password">
+         </div>
+         <p>or register with</p>
+         <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google"></i>
+         </div>
+         <button type="button" (click)="status = true">Create Account</button>
+      </form>
+   </div>
+</div>
